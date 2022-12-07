@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahfika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: 0,
+                        lg: "135px"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="w-full bg-[#F6C71F] h-screen">
+        <div class="flex flex-col container h-full">
+            <!-- Navbar -->
+            <div class="flex flex-row justify-between pt-[58px]">
+                <span class="flex flex-row font-bold">FA</span>
+                <img src="img/menu.svg" class="w-[24px] cursor-pointer" />
+            </div>
+            <!-- End Navbar -->
+
+            <!-- Introduction -->
+            <div class="flex grow flex-row">
+                <!-- Left Side -->
+                <div class="flex flex-col justify-center w-1/2">
+                    <p class="text-[85px] leading-tight font-medium">
+                        Yo I'm Shahfika, <br />
+                        I Develop Stuff.
+                    </p>
+                    <p class="text-[24px] mt-[40px]">
+                        Let's collaborate on your next project
+                    </p>
+
+                    <div class="inline-flex mt-[100px] space-x-[24px]">
+                        <button
+                            class="text-[24px] py-[12px] px-[40px] bg-black rounded-full text-white hover:shadow-lg">Let's
+                            Work</button>
+                        <button
+                            class="text-[24px] py-[12px] px-[40px] border-2 border-black rounded-full hover:shadow-lg">See
+                            my work</button>
+                    </div>
+                    <div class="inline-flex space-x-[24px] mt-[100px]">
+                        <img src="img/icons8-facebook.svg" class="w-[24px]"/>
+                        <img src="img/icons8-twitter.svg" class="w-[24px]"/>
+                        <img src="img/icons8-instagram.svg" class="w-[24px]"/>
+                        <img src="img/icons8-medium-monogram.svg" class="w-[24px]"/>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="grid w-1/2">
+                    <img src="img/illustration.png" class="w-5/6 place-self-end" />
+                </div>
+            </div>
+            <!-- End Introduction -->
+        </div>
+    </section>
+    <!-- End Header -->
+
+
+    <!-- Portofolio -->
+    <section class="w-full container mt-[100px]">
+        <p class="text-[50px] font-bold">Portofolio</p>
+        <p>I've worked with a couple of innovative brands over the years, here's a selection of some my favorite works.</p>
+        
+        <div class="grid grid-cols-5 items-center gap-[60px] mt-[40px]">
+            <img src="img/telkom.png"/>
+            <img src="img/tokopedia.png"/>
+            <img src="img/shopee.png"/>
+            <img src="img/gojek.png"/>
+        </div>
+
+        <div class="inline-flex space-x-[24px] mt-[80px] text-[20px] text-neutral-500">
+            <span class="text-neutral-900 font-bold">All works</span>
+            <span>Android Development</span>
+            <span>Web Development</span>
+            <span>UI & UX</span>
+            <span>Game Development</span>
+        </div>
+        <div class="grid grid-cols-3 gap-[40px] mt-[20px]">
+            <div class="aspect-square bg-zinc-100 rounded-xl"></div>
+            <div class="aspect-square bg-zinc-100 rounded-xl"></div>
+            <div class="aspect-square bg-zinc-100 rounded-xl"></div>
+            <div class="aspect-square bg-zinc-100 rounded-xl"></div>
+            <div class="aspect-square bg-zinc-100 rounded-xl"></div>
+            <div class="aspect-square bg-zinc-100 rounded-xl"></div>
+            <div class="aspect-square bg-zinc-100 rounded-xl"></div>
+            <div class="aspect-square bg-zinc-100 rounded-xl"></div>
+        </div>
+    </section>
+    <!-- End Portofolio -->
+
+    <div class="border border-neutral-500 w-1/3 container my-[200px]"></div>
+    
+    <!-- Shop -->
+    <section class="flex flex-row w-full container">
+        <div class="w-1/2">
+            <img src="img/shop.jpg" class="w-4/6 border-4 border-black rounded-xl"/>
+        </div>
+        <div class="flex flex-col w-1/2">
+            <p class="text-[50px] font-bold">Fullstack Next.js Course</p>
+            <p class="text-[24px] w-10/12 mt-[12px]">I've been working on this project for a while now. It's basically a diary-style course project of my career so far....</p>
+            <div class="inline-flex mt-[100px] space-x-[24px]">
+                <button
+                    class="text-[24px] py-[12px] px-[40px] bg-black rounded-full text-white hover:shadow-lg">Pre Order</button>
+                <button
+                    class="text-[24px] py-[12px] px-[40px] border-2 border-black rounded-full hover:shadow-lg">Go To Store</button>
+            </div>
+        </div>
+    </section>
+    <!-- End Shop -->
+
+    <div class="border border-neutral-500 w-1/3 container my-[200px]"></div>
+
+    <!-- Collaborate -->
+    <section class="text-center">
+        <p class="text-[50px]">Want to collaborate?</p>
+        <p class="text-[24px]">You can shoot me an email or we could have a quick chat.</p>
+        <div class="mt-[50px]">
+            <button
+            class="text-[24px] py-[12px] px-[40px] bg-black rounded-full text-white hover:shadow-lg">Get in touch</button>
+       
+        </div>
+    </section>
+    <!-- End Collaborate -->
+
+    <!-- Footer -->
+    <footer class="border-t bg-zinc-100 mt-[100px]">
+        <div class="grid grid-cols-4 container py-[50px]">
+            <div class="flex flex-col">
+                <div class="w-[100px] h-[100px] bg-zinc-200 border-2 border-zinc-300 rounded-lg"></div>
+                <div class="inline-flex space-x-[24px] mt-[24px] opacity-50">
+                    <img src="img/icons8-facebook.svg" class="w-[24px]"/>
+                    <img src="img/icons8-twitter.svg" class="w-[24px]"/>
+                    <img src="img/icons8-instagram.svg" class="w-[24px]"/>
+                    <img src="img/icons8-medium-monogram.svg" class="w-[24px]"/>
+                </div>
+                <p class="mt-[12px] text-sm text-neutral-500">2022 Fahrezi Adha. All rights reserved</p>
+            </div>
+            <div class="flex flex-col space-y-4 text-zinc-500">
+                <a href="#">About Me</a>
+                <a href="#">Contact</a>
+                <a href="#">Testimonial</a>
+                <a href="#">Reference</a>
+            </div>
+            <div class="flex flex-col space-y-4 text-zinc-500">
+                <a href="#">Portofolio</a>
+                <a href="#">Store</a>
+                <a href="#">Books</a>
+            </div>
+            <div class="flex flex-col space-y-4 text-zinc-500">
+                <a href="#">Get in touch</a>
+                <a href="#" class="mt-[24px] font-bold text-black">📞 +62 8123456789</a>
+                <a href="#" class="font-bold text-black">✉️ shahfika@gmail.com</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
