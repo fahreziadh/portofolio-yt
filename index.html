@@ -13,7 +13,7 @@
                 container: {
                     center: true,
                     padding: {
-                        DEFAULT: 0,
+                        DEFAULT: "1rem",
                         lg: "135px"
                     }
                 }
@@ -36,8 +36,8 @@
             <!-- Introduction -->
             <div class="flex grow flex-row">
                 <!-- Left Side -->
-                <div class="flex flex-col justify-center w-1/2">
-                    <p class="text-[85px] leading-tight font-medium">
+                <div class="flex flex-col justify-center lg:w-1/2 w-full">
+                    <p class="text-[40px] lg:text-[85px] leading-tight font-medium">
                         Yo I'm Shahfika, <br />
                         I Develop Stuff.
                     </p>
@@ -47,10 +47,10 @@
 
                     <div class="inline-flex mt-[100px] space-x-[24px]">
                         <button
-                            class="text-[24px] py-[12px] px-[40px] bg-black rounded-full text-white hover:shadow-lg">Let's
+                            class="px-[16px] py-[8px] lg:text-[24px] lg:py-[12px] lg:px-[40px] bg-black rounded-full text-white hover:shadow-lg">Let's
                             Work</button>
                         <button
-                            class="text-[24px] py-[12px] px-[40px] border-2 border-black rounded-full hover:shadow-lg">See
+                            class="px-[16px] py-[8px] lg:text-[24px] lg:py-[12px] lg:px-[40px] border-2 border-black rounded-full hover:shadow-lg">See
                             my work</button>
                     </div>
                     <div class="inline-flex space-x-[24px] mt-[100px]">
@@ -62,7 +62,7 @@
                 </div>
 
                 <!-- Right Side -->
-                <div class="grid w-1/2">
+                <div class="hidden lg:grid w-1/2">
                     <img src="img/illustration.png" class="w-5/6 place-self-end" />
                 </div>
             </div>
@@ -77,21 +77,21 @@
         <p class="text-[50px] font-bold">Portofolio</p>
         <p>I've worked with a couple of innovative brands over the years, here's a selection of some my favorite works.</p>
         
-        <div class="grid grid-cols-5 items-center gap-[60px] mt-[40px]">
+        <div class="grid grid-cols-3 lg:grid-cols-5 items-center gap-[60px] mt-[40px]">
             <img src="img/telkom.png"/>
             <img src="img/tokopedia.png"/>
             <img src="img/shopee.png"/>
             <img src="img/gojek.png"/>
         </div>
 
-        <div class="inline-flex space-x-[24px] mt-[80px] text-[20px] text-neutral-500">
+        <div class="inline-flex space-x-[24px] mt-[80px] text-[20px] text-neutral-500 truncate">
             <span class="text-neutral-900 font-bold">All works</span>
             <span>Android Development</span>
             <span>Web Development</span>
             <span>UI & UX</span>
             <span>Game Development</span>
         </div>
-        <div class="grid grid-cols-3 gap-[40px] mt-[20px]">
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-[40px] mt-[20px]">
             <div class="aspect-square bg-zinc-100 rounded-xl"></div>
             <div class="aspect-square bg-zinc-100 rounded-xl"></div>
             <div class="aspect-square bg-zinc-100 rounded-xl"></div>
@@ -107,14 +107,14 @@
     <div class="border border-neutral-500 w-1/3 container my-[200px]"></div>
     
     <!-- Shop -->
-    <section class="flex flex-row w-full container">
-        <div class="w-1/2">
+    <section class="flex flex-col lg:flex-row w-full container">
+        <div class="w-full lg:w-1/2">
             <img src="img/shop.jpg" class="w-4/6 border-4 border-black rounded-xl"/>
         </div>
-        <div class="flex flex-col w-1/2">
+        <div class="flex  flex-col w-full lg:w-1/2">
             <p class="text-[50px] font-bold">Fullstack Next.js Course</p>
             <p class="text-[24px] w-10/12 mt-[12px]">I've been working on this project for a while now. It's basically a diary-style course project of my career so far....</p>
-            <div class="inline-flex mt-[100px] space-x-[24px]">
+            <div class="inline-flex justify-center items-center mt-[100px] space-x-[24px]">
                 <button
                     class="text-[24px] py-[12px] px-[40px] bg-black rounded-full text-white hover:shadow-lg">Pre Order</button>
                 <button
